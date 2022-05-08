@@ -1,0 +1,1149 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DBShop商城系统 - 很好的商城系统|zendframework3商城系统|Laminas商城系统|PHP商城系统|DBShop商城</title><meta name="keywords" content="很好的商城系统,zendframework3商城系统,Laminas商城系统,PHP商城系统,DBShop商城">
+<meta name="description" content="很好的商城系统,zendframework3商城系统,Laminas商城系统,PHP商城系统,DBShop商城">
+<meta name="generator" content="DBShop">
+<meta name="author" content="北京珑大钜商科技有限公司">
+<meta name="copyright" content="Loongdom Inc. All Rights Reserved">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DBShop商城系统">
+<meta property="og:description" content="很好的商城系统,zendframework3商城系统,Laminas商城系统,PHP商城系统,DBShop商城">
+<meta property="og:site_name" content="DBShop商城系统">
+<meta property="og:url" content="http://localhost/public/">    <link href="/public/favicon.ico?v=1652016338" rel="shortcut icon">
+
+    <link rel="stylesheet" href="/public/template/pc/default/css/stylesheet.css?v=3.12021110801">
+
+    <!--[if lte IE 8]>
+    <script type="text/javascript" src="/public/template/pc/default/js/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/public/template/pc/default/js/frontJs.js"></script>
+    <script type="text/javascript" src="/public/template/pc/default/js/layer/layer.js"></script>
+    <script type="text/javascript" src="/public/template/pc/default/js/laydate/laydate.js"></script>
+    <script type="text/javascript" src="/public/template/pc/default/js/jquery-lazyload/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="/public/template/pc/default/js/readmore.min.js"></script>
+    <script type="text/javascript" src="/public/template/pc/default/js/headCommon.js?v=3.12021110801"></script>
+</head>
+<body>
+<!--顶部-->
+<div class="site-topbar" id="site-topbar">
+    <div class="container">
+        <div class="topbar-nav">
+                    </div>
+        <div class="topbar-info J_userInfo">
+            <ul class="list-inline">
+                                <li><a href="/public/shop-home">用户中心</a></li>
+                <li><a href="/public/home-order">我的订单</a></li>
+                                    <li><a href="/public/shop-user">登录</a></li>
+                    <li><a href="/public/shop-user/userRegister">注册</a></li>
+                                            </ul>
+        </div>
+    </div>
+</div>
+<!--头部-->
+<div class="site-header">
+    <div class="container">
+        <div class="site-logo"> <a href="/public/" class="logo"><img src="/public/upload/common/logo.png?v=1652016338" style="max-height: 90px;"></a></div>
+        <div class="header-info">
+                            <img alt="手机扫描后，访问手机站点" title="手机扫描后，访问手机站点" src="/public/upload/common/shopQrcode.png?v=1652016338" style="width: 50px;height: 50px;margin-right: 10px;">
+                        <div class="search-section">
+                <form method="get" action="/public/shop-search/goodsSearch" class="search-form clearfix">
+                    <input type="text" name="keywords" value="" placeholder="简简单单搜索" autocomplete="off" class="search-text">
+                    <input type="submit" class="search-btn iconfont" value="">
+                </form>
+            </div>
+            <div class="cart-section">
+                <a href="/public/shop-cart" class="mini-cart" id="J_miniCart"><i class="iconfont"></i>购物车                                        <span class="mini-cart-num J_cartNum" id="top_cart" style="display:none;">0</span>
+                </a>
+            </div>
+        </div>
+    </div><div class="header_menu">
+    <div class="container">
+        <div class="header-nav clearfix">
+            <div class="nav-category nav-category-toggled" id="J_categoryContainer"> <a href="" class="btn-category-list">商品分类</a>
+    <div style="display: block;" class="nav-category-section">
+        <ul class="nav-category-list">
+                                <li class="nav-category-item nav-category-item-first">
+                        <div class="nav-category-content"> <a href="/public/shop-class/goodsList/5" class="title">家用电器</a>
+                                                            <div class="links">
+                                                                            <a href="/public/shop-class/goodsList/6">洗衣机</a>
+                                                                            <a href="/public/shop-class/goodsList/7">电冰箱</a>
+                                                                            <a href="/public/shop-class/goodsList/8">电视</a>
+                                                                            <a href="/public/shop-class/goodsList/9">空调</a>
+                                                                    </div>
+                                                    </div>
+                    </li>
+                                    <li class="nav-category-item ">
+                        <div class="nav-category-content"> <a href="/public/shop-class/goodsList/4" class="title">手机数码</a>
+                                                            <div class="links">
+                                                                            <a href="/public/shop-class/goodsList/10">手机通讯</a>
+                                                                            <a href="/public/shop-class/goodsList/11">摄影摄像</a>
+                                                                            <a href="/public/shop-class/goodsList/12">数码配件</a>
+                                                                            <a href="/public/shop-class/goodsList/13">智能设备</a>
+                                                                    </div>
+                                                    </div>
+                    </li>
+                                    <li class="nav-category-item ">
+                        <div class="nav-category-content"> <a href="/public/shop-class/goodsList/3" class="title">家具家居</a>
+                                                            <div class="links">
+                                                                            <a href="/public/shop-class/goodsList/14">厨具</a>
+                                                                            <a href="/public/shop-class/goodsList/15">家纺</a>
+                                                                            <a href="/public/shop-class/goodsList/16">灯具</a>
+                                                                    </div>
+                                                    </div>
+                    </li>
+                                    <li class="nav-category-item ">
+                        <div class="nav-category-content"> <a href="/public/shop-class/goodsList/2" class="title">卫浴</a>
+                                                            <div class="links">
+                                                                            <a href="/public/shop-class/goodsList/17">电子电器</a>
+                                                                            <a href="/public/shop-class/goodsList/18">系统养护</a>
+                                                                            <a href="/public/shop-class/goodsList/19">改装配件</a>
+                                                                    </div>
+                                                    </div>
+                    </li>
+                                    <li class="nav-category-item ">
+                        <div class="nav-category-content"> <a href="/public/shop-class/goodsList/1" class="title">服装鞋帽</a>
+                                                            <div class="links">
+                                                                            <a href="/public/shop-class/goodsList/20">男装</a>
+                                                                            <a href="/public/shop-class/goodsList/21">女装</a>
+                                                                            <a href="/public/shop-class/goodsList/22">童装</a>
+                                                                            <a href="/public/shop-class/goodsList/23">内衣</a>
+                                                                    </div>
+                                                    </div>
+                    </li>
+                        </ul>
+    </div>
+    <script type="text/javascript">
+        $("#J_categoryContainer li").hover(function() {
+            $(this).addClass("current");
+        }, function() {
+            $(this).removeClass("current");
+        });
+    </script>
+</div>            <div class="nav-main">
+                <ul class="nav-main-list J_menuNavMain clearfix">
+                    <li class="nav-main-item">
+                        <a href="/public/"><span class="text">首页</span></a>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-16 offset4">
+            <div class="home-slider">
+                <div class="xm-slider">
+                    <div class="xm-slider-container">
+                        <div class="flexslider">
+    <ul class="slides">
+                <li>
+                <a target="_blank" href=""><img src="/public/upload/adImage/werwerdfdsf_5f98ea24001915_22735133.png"></a>
+            </li>
+                <li>
+                <a target="_blank" href=""><img src="/public/upload/adImage/0c9a7b3dd852ef4e64374089c130bd93_5f98e4253192a7_59374697.png"></a>
+            </li>
+                <li>
+                <a target="_blank" href=""><img src="/public/upload/adImage/5ce862594eeaee6da9306b36f44fc216_5f98ea240027d5_19974187.png"></a>
+            </li>
+        </ul>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="home-hd-show container">
+                <div class="hd-show-item hd-show-item-first">
+                        <a target="_blank" href=""><img src="/public/upload/adImage/3c8365264b7f682ce7154f894a807ebd_5f98ea584b7ec8_79660029.jpg" style="border: 0;" /></a>
+                </div>
+                <div class="hd-show-item ">
+                        <a target="_blank" href=""><img src="/public/upload/adImage/a541ab3587f177e135e5cb0b8e92f591_5f98ea601e6743_00301582.jpg" style="border: 0;" /></a>
+                </div>
+                <div class="hd-show-item ">
+                        <a target="_blank" href=""><img src="/public/upload/adImage/d694b5e1465c251aec9e91d34daef81a_5f98ea698daea3_89795296.jpg" style="border: 0;" /></a>
+                </div>
+                <div class="hd-show-item ">
+                        <a target="_blank" href=""><img src="/public/upload/adImage/e47207fd8e6f7e96333889a01a1ae465_5f98ea74b35854_92573271.jpg" style="border: 0;" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="floor_1" class="container row has-floor index_goods_list">
+        <div class="col col-4 goods-left">
+            <div>
+                <div class="heading">
+                    <h4 class="title">1F / 特价商品</h4>
+                </div>
+                <div class="drop-product">
+    <a target="_blank" href=""><img src="" data-original="/public/upload/adImage/2d11328abab10fda29c6b38e43114e6b_5f98eae2e1acb6_43948417.jpg" border='0' class="lazy"/></a>
+</div>
+            </div>
+        </div>
+        <div class="col col-16 goods-right">
+                <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/8" title="小米（MI）电视4A标准版 L55M5-AZ/L55M5-AD 55英寸"><img src="" data-original="/public/upload/goods/image/2094d0cd98ddee55b1a5696434f43483_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/8" title="小米（MI）电视4A标准版 L55M5-AZ/L55M5-AD 55英寸">小米（MI）电视4A标准版 L55M5-AZ/L55M5-AD 55英寸</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥2,200.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(8);" class="add-to-cart cart-1-8" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/7" title="索尼(SONY)KD-55X8000E 55英寸 4K超高清"><img src="" data-original="/public/upload/goods/image/c534950c4a79ea20293e483fd4ed4aff_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/7" title="索尼(SONY)KD-55X8000E 55英寸 4K超高清">索尼(SONY)KD-55X8000E 55英寸 4K超高清</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥5,199.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(7);" class="add-to-cart cart-1-7" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/6" title="苹果(Apple) iPhone X 64GB 深空灰色 移动联通电信全网通4G手机"><img src="" data-original="/public/upload/goods/image/b4fe9d54e6ce250c1a0519f16c71cc24_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/6" title="苹果(Apple) iPhone X 64GB 深空灰色 移动联通电信全网通4G手机">苹果(Apple) iPhone X 64GB 深空灰色 移动联通电信全网通4G手机</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥6,158.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(6);" class="add-to-cart cart-1-6" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/5" title="南极人(NanJiren)家纺 简约全棉四件套床上用品纯棉斜纹双人被套床单式4件套"><img src="" data-original="/public/upload/goods/image/2a4a0e3add89d3ee51e35286ba7a0203_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/5" title="南极人(NanJiren)家纺 简约全棉四件套床上用品纯棉斜纹双人被套床单式4件套">南极人(NanJiren)家纺 简约全棉四件套床上用品纯棉斜纹双人被套床单式4件套</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥150.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(5);" class="add-to-cart cart-1-5" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/4" title="方太（FOTILE）20立方风魔方 侧吸式触控式手感智控抽吸油烟机燃气灶烟灶套餐JQD2T+HC8BE"><img src="" data-original="/public/upload/goods/image/b5c225bed8f0dc249315c09151208541_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/4" title="方太（FOTILE）20立方风魔方 侧吸式触控式手感智控抽吸油烟机燃气灶烟灶套餐JQD2T+HC8BE">方太（FOTILE）20立方风魔方 侧吸式触控式手感智控抽吸油烟机燃气灶烟灶套餐JQD2T+HC8BE</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥6,000.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(4);" class="add-to-cart cart-1-4" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/3" title="美的（Midea）BCD-525WKPZM(E) 星际银 525升对开门电冰箱"><img src="" data-original="/public/upload/goods/image/81b235c99ff28f59f6d1f74723de3bef_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/3" title="美的（Midea）BCD-525WKPZM(E) 星际银 525升对开门电冰箱">美的（Midea）BCD-525WKPZM(E) 星际银 525升对开门电冰箱</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥3,099.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(3);" class="add-to-cart cart-1-3" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/2" title="西门子（SIEMENS） XQG100-WM14U561HW 10公斤 变频 一键智能除渍"><img src="" data-original="/public/upload/goods/image/ac41193ced77f8867f40b331fb6286fe_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/2" title="西门子（SIEMENS） XQG100-WM14U561HW 10公斤 变频 一键智能除渍">西门子（SIEMENS） XQG100-WM14U561HW 10公斤 变频 一键智能除渍</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥5,399.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(2);" class="add-to-cart cart-1-2" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/1" title="小米Mix3 全网通版 8GB+128GB 黑色 | 磁动力滑盖全面屏"><img src="" data-original="/public/upload/goods/image/b4793d059bbfb5c56537be2d0de9bef8_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/1" title="小米Mix3 全网通版 8GB+128GB 黑色 | 磁动力滑盖全面屏">小米Mix3 全网通版 8GB+128GB 黑色 | 磁动力滑盖全面屏</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥3,558.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(1);" class="add-to-cart cart-1-1" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <!--1F与2F间的横幅广告-->
+    <div class="container">
+        <div>
+                <a target="_blank" href=""><img src="/public/upload/adImage/31019caf22b42d1cd52073cbc5532c78_5f98eaa4454255_30088275.jpg" style="border: 0;" /></a>
+        </div>
+    </div>
+    <div id="floor_2" class="container row has-floor index_goods_list">
+        <div class="col col-4 goods-left">
+            <div>
+                <div class="heading">
+                    <h4 class="title">2F / 精品促销</h4>
+                </div>
+                <div class="drop-product">
+    <a target="_blank" href=""><img src="" data-original="/public/upload/adImage/6cc78839c0a32cbe91e9113536212e2f_5f98eaf8d7fcc5_87127011.jpg" border='0' class="lazy"/></a>
+</div>
+            </div>
+        </div>
+        <div class="col col-16 goods-right">
+                <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/2" title="西门子（SIEMENS） XQG100-WM14U561HW 10公斤 变频 一键智能除渍"><img src="" data-original="/public/upload/goods/image/ac41193ced77f8867f40b331fb6286fe_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/2" title="西门子（SIEMENS） XQG100-WM14U561HW 10公斤 变频 一键智能除渍">西门子（SIEMENS） XQG100-WM14U561HW 10公斤 变频 一键智能除渍</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥5,399.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(2);" class="add-to-cart cart-1-2" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/3" title="美的（Midea）BCD-525WKPZM(E) 星际银 525升对开门电冰箱"><img src="" data-original="/public/upload/goods/image/81b235c99ff28f59f6d1f74723de3bef_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/3" title="美的（Midea）BCD-525WKPZM(E) 星际银 525升对开门电冰箱">美的（Midea）BCD-525WKPZM(E) 星际银 525升对开门电冰箱</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥3,099.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(3);" class="add-to-cart cart-1-3" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/1" title="小米Mix3 全网通版 8GB+128GB 黑色 | 磁动力滑盖全面屏"><img src="" data-original="/public/upload/goods/image/b4793d059bbfb5c56537be2d0de9bef8_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/1" title="小米Mix3 全网通版 8GB+128GB 黑色 | 磁动力滑盖全面屏">小米Mix3 全网通版 8GB+128GB 黑色 | 磁动力滑盖全面屏</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥3,558.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(1);" class="add-to-cart cart-1-1" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/5" title="南极人(NanJiren)家纺 简约全棉四件套床上用品纯棉斜纹双人被套床单式4件套"><img src="" data-original="/public/upload/goods/image/2a4a0e3add89d3ee51e35286ba7a0203_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/5" title="南极人(NanJiren)家纺 简约全棉四件套床上用品纯棉斜纹双人被套床单式4件套">南极人(NanJiren)家纺 简约全棉四件套床上用品纯棉斜纹双人被套床单式4件套</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥150.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(5);" class="add-to-cart cart-1-5" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/7" title="索尼(SONY)KD-55X8000E 55英寸 4K超高清"><img src="" data-original="/public/upload/goods/image/c534950c4a79ea20293e483fd4ed4aff_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/7" title="索尼(SONY)KD-55X8000E 55英寸 4K超高清">索尼(SONY)KD-55X8000E 55英寸 4K超高清</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥5,199.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(7);" class="add-to-cart cart-1-7" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/4" title="方太（FOTILE）20立方风魔方 侧吸式触控式手感智控抽吸油烟机燃气灶烟灶套餐JQD2T+HC8BE"><img src="" data-original="/public/upload/goods/image/b5c225bed8f0dc249315c09151208541_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/4" title="方太（FOTILE）20立方风魔方 侧吸式触控式手感智控抽吸油烟机燃气灶烟灶套餐JQD2T+HC8BE">方太（FOTILE）20立方风魔方 侧吸式触控式手感智控抽吸油烟机燃气灶烟灶套餐JQD2T+HC8BE</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥6,000.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(4);" class="add-to-cart cart-1-4" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/6" title="苹果(Apple) iPhone X 64GB 深空灰色 移动联通电信全网通4G手机"><img src="" data-original="/public/upload/goods/image/b4fe9d54e6ce250c1a0519f16c71cc24_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/6" title="苹果(Apple) iPhone X 64GB 深空灰色 移动联通电信全网通4G手机">苹果(Apple) iPhone X 64GB 深空灰色 移动联通电信全网通4G手机</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥6,158.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(6);" class="add-to-cart cart-1-6" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/8" title="小米（MI）电视4A标准版 L55M5-AZ/L55M5-AD 55英寸"><img src="" data-original="/public/upload/goods/image/2094d0cd98ddee55b1a5696434f43483_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/8" title="小米（MI）电视4A标准版 L55M5-AZ/L55M5-AD 55英寸">小米（MI）电视4A标准版 L55M5-AZ/L55M5-AD 55英寸</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥2,200.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(8);" class="add-to-cart cart-1-8" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <!--2F与3F间的横幅广告-->
+    <div class="container">
+        <div>
+                <a target="_blank" href=""><img src="/public/upload/adImage/23936116e1fdf6c7bfef9082c5814ed0_5f98eab355f5a6_06442551.jpg" style="border: 0;" /></a>
+        </div>
+    </div>
+    <div id="floor_3" class="container row has-floor index_goods_list">
+        <div class="col col-4 goods-left">
+            <div>
+                <div class="heading">
+                    <h4 class="title">3F / 时尚潮流</h4>
+                </div>
+                <div class="drop-product">
+    <a target="_blank" href=""><img src="" data-original="/public/upload/adImage/e2d9b76b021bf4d67e1d48a921843d59_5f98eb01adf5f5_25132103.jpg" border='0' class="lazy"/></a>
+</div>
+            </div>
+        </div>
+        <div class="col col-16 goods-right">
+                <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/2" title="西门子（SIEMENS） XQG100-WM14U561HW 10公斤 变频 一键智能除渍"><img src="" data-original="/public/upload/goods/image/ac41193ced77f8867f40b331fb6286fe_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/2" title="西门子（SIEMENS） XQG100-WM14U561HW 10公斤 变频 一键智能除渍">西门子（SIEMENS） XQG100-WM14U561HW 10公斤 变频 一键智能除渍</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥5,399.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(2);" class="add-to-cart cart-1-2" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/6" title="苹果(Apple) iPhone X 64GB 深空灰色 移动联通电信全网通4G手机"><img src="" data-original="/public/upload/goods/image/b4fe9d54e6ce250c1a0519f16c71cc24_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/6" title="苹果(Apple) iPhone X 64GB 深空灰色 移动联通电信全网通4G手机">苹果(Apple) iPhone X 64GB 深空灰色 移动联通电信全网通4G手机</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥6,158.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(6);" class="add-to-cart cart-1-6" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/1" title="小米Mix3 全网通版 8GB+128GB 黑色 | 磁动力滑盖全面屏"><img src="" data-original="/public/upload/goods/image/b4793d059bbfb5c56537be2d0de9bef8_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/1" title="小米Mix3 全网通版 8GB+128GB 黑色 | 磁动力滑盖全面屏">小米Mix3 全网通版 8GB+128GB 黑色 | 磁动力滑盖全面屏</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥3,558.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(1);" class="add-to-cart cart-1-1" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/3" title="美的（Midea）BCD-525WKPZM(E) 星际银 525升对开门电冰箱"><img src="" data-original="/public/upload/goods/image/81b235c99ff28f59f6d1f74723de3bef_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/3" title="美的（Midea）BCD-525WKPZM(E) 星际银 525升对开门电冰箱">美的（Midea）BCD-525WKPZM(E) 星际银 525升对开门电冰箱</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥3,099.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(3);" class="add-to-cart cart-1-3" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/7" title="索尼(SONY)KD-55X8000E 55英寸 4K超高清"><img src="" data-original="/public/upload/goods/image/c534950c4a79ea20293e483fd4ed4aff_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/7" title="索尼(SONY)KD-55X8000E 55英寸 4K超高清">索尼(SONY)KD-55X8000E 55英寸 4K超高清</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥5,199.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(7);" class="add-to-cart cart-1-7" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/5" title="南极人(NanJiren)家纺 简约全棉四件套床上用品纯棉斜纹双人被套床单式4件套"><img src="" data-original="/public/upload/goods/image/2a4a0e3add89d3ee51e35286ba7a0203_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/5" title="南极人(NanJiren)家纺 简约全棉四件套床上用品纯棉斜纹双人被套床单式4件套">南极人(NanJiren)家纺 简约全棉四件套床上用品纯棉斜纹双人被套床单式4件套</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥150.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(5);" class="add-to-cart cart-1-5" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/4" title="方太（FOTILE）20立方风魔方 侧吸式触控式手感智控抽吸油烟机燃气灶烟灶套餐JQD2T+HC8BE"><img src="" data-original="/public/upload/goods/image/b5c225bed8f0dc249315c09151208541_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/4" title="方太（FOTILE）20立方风魔方 侧吸式触控式手感智控抽吸油烟机燃气灶烟灶套餐JQD2T+HC8BE">方太（FOTILE）20立方风魔方 侧吸式触控式手感智控抽吸油烟机燃气灶烟灶套餐JQD2T+HC8BE</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥6,000.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(4);" class="add-to-cart cart-1-4" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/8" title="小米（MI）电视4A标准版 L55M5-AZ/L55M5-AD 55英寸"><img src="" data-original="/public/upload/goods/image/2094d0cd98ddee55b1a5696434f43483_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/8" title="小米（MI）电视4A标准版 L55M5-AZ/L55M5-AD 55英寸">小米（MI）电视4A标准版 L55M5-AZ/L55M5-AD 55英寸</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥2,200.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(8);" class="add-to-cart cart-1-8" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <!--3F与4F间的横幅广告-->
+    <div class="container">
+        <div>
+                <a target="_blank" href=""><img src="/public/upload/adImage/a580514522e2a1d6af728290439abdb0_5f98eaba7093d8_98405098.jpg" style="border: 0;" /></a>
+        </div>
+    </div>
+    <div id="floor_4" class="container row has-floor index_goods_list">
+        <div class="col col-4 goods-left">
+            <div>
+                <div class="heading">
+                    <h4 class="title">4F / 热门推荐</h4>
+                </div>
+                <div class="drop-product">
+    <a target="_blank" href=""><img src="" data-original="/public/upload/adImage/f3569fb94ea872bf471b9e38b327b7df_5f98eb09106463_18717712.jpg" border='0' class="lazy"/></a>
+</div>
+            </div>
+        </div>
+        <div class="col col-16 goods-right">
+                <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/6" title="苹果(Apple) iPhone X 64GB 深空灰色 移动联通电信全网通4G手机"><img src="" data-original="/public/upload/goods/image/b4fe9d54e6ce250c1a0519f16c71cc24_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/6" title="苹果(Apple) iPhone X 64GB 深空灰色 移动联通电信全网通4G手机">苹果(Apple) iPhone X 64GB 深空灰色 移动联通电信全网通4G手机</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥6,158.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(6);" class="add-to-cart cart-1-6" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/8" title="小米（MI）电视4A标准版 L55M5-AZ/L55M5-AD 55英寸"><img src="" data-original="/public/upload/goods/image/2094d0cd98ddee55b1a5696434f43483_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/8" title="小米（MI）电视4A标准版 L55M5-AZ/L55M5-AD 55英寸">小米（MI）电视4A标准版 L55M5-AZ/L55M5-AD 55英寸</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥2,200.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(8);" class="add-to-cart cart-1-8" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/4" title="方太（FOTILE）20立方风魔方 侧吸式触控式手感智控抽吸油烟机燃气灶烟灶套餐JQD2T+HC8BE"><img src="" data-original="/public/upload/goods/image/b5c225bed8f0dc249315c09151208541_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/4" title="方太（FOTILE）20立方风魔方 侧吸式触控式手感智控抽吸油烟机燃气灶烟灶套餐JQD2T+HC8BE">方太（FOTILE）20立方风魔方 侧吸式触控式手感智控抽吸油烟机燃气灶烟灶套餐JQD2T+HC8BE</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥6,000.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(4);" class="add-to-cart cart-1-4" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/3" title="美的（Midea）BCD-525WKPZM(E) 星际银 525升对开门电冰箱"><img src="" data-original="/public/upload/goods/image/81b235c99ff28f59f6d1f74723de3bef_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/3" title="美的（Midea）BCD-525WKPZM(E) 星际银 525升对开门电冰箱">美的（Midea）BCD-525WKPZM(E) 星际银 525升对开门电冰箱</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥3,099.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(3);" class="add-to-cart cart-1-3" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/2" title="西门子（SIEMENS） XQG100-WM14U561HW 10公斤 变频 一键智能除渍"><img src="" data-original="/public/upload/goods/image/ac41193ced77f8867f40b331fb6286fe_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/2" title="西门子（SIEMENS） XQG100-WM14U561HW 10公斤 变频 一键智能除渍">西门子（SIEMENS） XQG100-WM14U561HW 10公斤 变频 一键智能除渍</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥5,399.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(2);" class="add-to-cart cart-1-2" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/7" title="索尼(SONY)KD-55X8000E 55英寸 4K超高清"><img src="" data-original="/public/upload/goods/image/c534950c4a79ea20293e483fd4ed4aff_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/7" title="索尼(SONY)KD-55X8000E 55英寸 4K超高清">索尼(SONY)KD-55X8000E 55英寸 4K超高清</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥5,199.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(7);" class="add-to-cart cart-1-7" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/1" title="小米Mix3 全网通版 8GB+128GB 黑色 | 磁动力滑盖全面屏"><img src="" data-original="/public/upload/goods/image/b4793d059bbfb5c56537be2d0de9bef8_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/1" title="小米Mix3 全网通版 8GB+128GB 黑色 | 磁动力滑盖全面屏">小米Mix3 全网通版 8GB+128GB 黑色 | 磁动力滑盖全面屏</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥3,558.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(1);" class="add-to-cart cart-1-1" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="index-goods-item">
+        <div class="product-block">
+            <div class="image">
+                <div class="product-img">
+                    <a href="/public/shop-goods/index/5" title="南极人(NanJiren)家纺 简约全棉四件套床上用品纯棉斜纹双人被套床单式4件套"><img src="" data-original="/public/upload/goods/image/2a4a0e3add89d3ee51e35286ba7a0203_thumb.jpg" class="lazy img-responsive"></a>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info">
+                    <h5 class="name"><a href="/public/shop-goods/index/5" title="南极人(NanJiren)家纺 简约全棉四件套床上用品纯棉斜纹双人被套床单式4件套">南极人(NanJiren)家纺 简约全棉四件套床上用品纯棉斜纹双人被套床单式4件套</a></h5>
+                    <div class="price">
+                        <span class="price-new">￥150.00</span>
+                    </div>
+                </div>
+                <div id="opacity-cart" class="cart">
+                    <div class="cart-style">
+                        <button onclick="addCart(5);" class="add-to-cart cart-1-5" type="button"><i class="iconfont"></i> <span>加入购物车</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="floors">
+        <a class="floor" href="#floor_1"><span class="floor_id">1F</span><span class="floor_title">特价商品</span></a>
+        <a class="floor" href="#floor_2"><span class="floor_id">2F</span><span class="floor_title">精品促销</span></a>
+        <a class="floor" href="#floor_3"><span class="floor_id">3F</span><span class="floor_title">时尚潮流</span></a>
+        <a class="floor" href="#floor_4"><span class="floor_id">4F</span><span class="floor_title">热门推荐</span></a>
+    </div>
+</div>
+<script type="text/javascript">
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            slideshowSpeed: 4000
+        });
+    });
+
+    $('.nav-category-section').readmore({
+        collapsedHeight: 400,
+        speed: 100,
+        moreLink: '<a href="#" class="btn btn-default" style="border:1px solid #dfdfdf;padding-top: 400px;width: 236px;line-height:18px;height: 18px;"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>',
+        lessLink: '<a href="#" class="btn btn-default" style="border:1px solid #dfdfdf;padding-top: '+$('.nav-category-section').height()+'px;width: 236px;line-height:18px;height: 18px;"><i class="fa fa fa-angle-double-up" aria-hidden="true"></i></a>'
+    });
+
+    $(document).ready(function() {
+        if ($(window).width() >= 768) {
+            let first_floor_element_offset = $('#floor_1').offset();
+            $('.floors').css('left', parseInt(first_floor_element_offset.left) - 50 + 'px');
+
+            $('.floors a').click(function(e) {
+                $('html, body').animate({ scrollTop: parseInt($($(this).attr('href')).offset().top) - 20 }, 600);
+                return false;
+            });
+
+            $(window).scroll(function () {
+                let window_top = $(window).scrollTop();
+                $('.has-floor').each(function (i) {
+                    let page_builder_wrapper_top = $(this).offset().top;
+
+                    if (window_top > page_builder_wrapper_top - 300) {
+                        $('.floors a:eq(' + i + ')').addClass('floor-active').siblings('a').removeClass('floor-active');
+                    }
+                });
+            });
+        } else {
+            $('.floors').css('display','none');
+        }
+    });
+</script><div class="site-footer">
+        <div class="footer-service">
+        <div class="container">
+            <ul class="list-service clearfix">
+                                    <li class="li_service">
+                        <a href="/public/shop-cms/single/5">
+                            <i class="iconfont"></i>                            <strong>一小时快速响应</strong>
+                        </a>
+                    </li>
+                                    <li class="li_service">
+                        <a href="/public/shop-cms/single/6">
+                            <i class="iconfont"></i>                            <strong>7天无理由退货</strong>
+                        </a>
+                    </li>
+                                    <li class="li_service">
+                        <a href="/public/shop-cms/single/7">
+                            <i class="iconfont"></i>                            <strong>15天免费换货</strong>
+                        </a>
+                    </li>
+                                    <li class="li_service">
+                        <a href="/public/shop-cms/single/8">
+                            <i class="iconfont"></i>                            <strong>满100包邮</strong>
+                        </a>
+                    </li>
+                                    <li class="li_service">
+                        <a href="/public/shop-cms/single/9">
+                            <i class="iconfont"></i>                            <strong>售后服务</strong>
+                        </a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer-links clearfix">
+            <dl class="col-links col-links-first">
+                <dt>帮助中心</dt>
+                <dd>
+    <a href="/public/shop-cms/single/10">
+        如何购买    </a>
+</dd>
+<dd>
+    <a href="/public/shop-cms/single/11">
+        如何收货    </a>
+</dd>
+            </dl>
+            <dl class="col-links">
+                <dt>服务支持</dt>
+                <dd>
+    <a href="/public/shop-cms/single/12">
+        联系我们    </a>
+</dd>
+<dd>
+    <a href="/public/shop-cms/single/13">
+        退换服务    </a>
+</dd>
+            </dl>
+            <dl class="col-links">
+                <dt>支付方式</dt>
+                <dd>
+    <a href="/public/shop-cms/single/14">
+        在线支付    </a>
+</dd>
+<dd>
+    <a href="/public/shop-cms/single/15">
+        线下支付    </a>
+</dd>
+            </dl>
+            <dl class="col-links">
+                <dt>关于我们</dt>
+                <dd>
+    <a href="/public/shop-cms/single/16">
+        关于我们    </a>
+</dd>
+<dd>
+    <a href="/public/shop-cms/single/17">
+        商城介绍    </a>
+</dd>
+            </dl>
+            <dl class="col-links">
+                <dt>客服中心</dt>
+                <dd>
+    <a href="/public/shop-cms/single/18">
+        联系客服    </a>
+</dd>
+<dd>
+    <a href="/public/shop-cms/single/19">
+        服务说明    </a>
+</dd>
+            </dl>
+            <div class="col-contact">
+                <p><span style="font-size: 20px;"><strong>400-800-xxxx</strong></span></p><p>周一至周五 9:00-18:00<br/></p>            </div>
+        </div>
+        <div class="footer-info clearfix">
+            <div style="position:relative;" class="info-text">
+                                                <p>Copyright &copy; <b><a href="https://www.loongdom.cn/about.html" target="_blank">DBShop商城系统</a></b> 版权所有                                        <br />                </p>
+                <p align="center">
+                                                                                                                                        </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/public/template/pc/default/js/common.js?v=3.12021110801"></script>
+<script type="text/javascript">
+    function addCart(goodsId) {
+        $.post("/public/shop-cart/add", {goodsId:goodsId, buyNum:1}, function (data) {
+            if(data.status == 'true') {
+                if(data.hasOwnProperty('toUrl')) {
+                    return window.location.href = data.toUrl;
+                }
+                
+                let cartGoodsNum = parseInt($('#top_cart').html()) + 1;
+                $('#top_cart').css('display','');
+                $('#top_cart').html(cartGoodsNum);
+            }
+            showMessage(data.message);
+        });
+    }
+    function addFav(goodsId) {
+        $.get("/public/shop-goods/addGoodsFavorites/"+goodsId, {}, function (data) {
+            if(data.status == 'true') {
+                if(data.favoritesState == 'add') $('#button-add-to-wishlist i').addClass('active');
+                if(data.favoritesState == 'remove') $('#button-add-to-wishlist i').removeClass('active');
+            }
+            showMessage(data.message);
+        }, 'json');
+    }
+</script>
+
+<div class="go-top" id="go-top">
+    <div class="go-top-box relative" style="display:none;">
+        <a href="#"><img alt="返回顶部" title="返回顶部" class="adid_icon" src="/public/template/pc/default/img/icon_back.png"></a>
+    </div>
+</div>
+<script type="text/javascript">
+    (function(e){e.fn.hhShare=function(t){var n={cenBox:"go-top-box",icon:"adid_icon",addClass:"red_bag",titleClass:"asid_title",triangle:"asid_share_triangle",showBox:"asid_sha_layer"},r=e.extend(n,t);this.each(function(){var t=e(this),n=e("."+r.cenBox).last();n.hide(),e("."+r.triangle+","+"."+r.showBox).hide(),e("."+r.cenBox).live({mouseenter:function(){var t=e(this).find("."+r.icon),n=e(this).find("."+r.icon).attr("alt");t.hide(),e(this).addClass(r.addClass),e(this).children("a").append('<b class="'+r.titleClass+'">'+n+"</b>"),e(this).find("."+r.triangle+","+"."+r.showBox).show()},mouseleave:function(){var t=e(this).find("."+r.icon),n=e(this).find("."+r.icon).attr("alt");t.show(),e(this).removeClass(r.addClass),e(this).find("."+r.titleClass).remove(),e(this).find("."+r.triangle+","+"."+r.showBox).hide()}}),e(window).scroll(function(){e(window).scrollTop()>100?n.fadeIn():n.fadeOut()}),n.click(function(){return e("body,html").animate({scrollTop:0},500),!1})})}})(jQuery);
+    $(function(){
+        $('#go-top').hhShare({
+            icon : 'adid_icon'
+        });
+    });
+</script>
+
+</body>
+</html>
+
+
